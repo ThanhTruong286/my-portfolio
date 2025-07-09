@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Brittany Chiang - Portfolio</title>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" role="navigation" aria-label="Primary">
+      <div class="sidebar-top">
+        <h1 class="name">Brittany Chiang</h1>
+        <div class="title">Front End Engineer</div>
+        <p class="short-desc">I build accessible, pixel-perfect digital experiences for the web.</p>
+        <nav>
+          <ul>
+            <li class="active" data-target="about" tabindex="0" role="button" aria-pressed="true">About</li>
+            <li data-target="experience" tabindex="0" role="button" aria-pressed="false">Experience</li>
+            <li data-target="projects" tabindex="0" role="button" aria-pressed="false">Projects</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="social-icons" aria-label="Social media links">
+        <a href="#" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.492.997.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.335-5.466-5.93 0-1.31.47-2.38 1.235-3.22-.125-.303-.535-1.523.115-3.176 0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 3-.405c1.02.005 2.045.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.655 1.653.245 2.873.12 3.176.77.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.1.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.8V24h-5v-7.5c0-1.8 0-4-2.4-4s-2.8 1.9-2.8 3.9V24h-5V8z"/></svg>
+        </a>
+        <a href="#" aria-label="CodePen" title="CodePen" target="_blank" rel="noopener noreferrer">
+          <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 2.25L1.5 7.5v9l10.5 5.25 10.5-5.25v-9L12 2.25zm7.5 8.25-3.75 2.25v3l3.75-2.25v-3zm-7.5 6-3.75-2.25v-3l3.75 2.25v3zm-4.5-3.75v-3l3-1.8v3l-3 1.8zm3-5.55-3-1.8 3-1.8 3 1.8-3 1.8zm1.5 1.05v-3l3 1.8v3l-3-1.8zm4.5 3.75-3.75 2.25v3l3.75-2.25v-3zm0-6v3l-3.75 2.25v-3l3.75-2.25z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.75 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"/></svg>
+        </a>
+        <a href="#" aria-label="Gmail" title="Gmail" target="_blank" rel="noopener noreferrer">
+          <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2-8 5-8-5h16zm0 12H4v-9l8 5 8-5v9z"/></svg>
+        </a>
+      </div>
+    </aside>
+    <main class="content" role="main">
+      <section id="about" class="intro active" aria-label="About Brittany Chiang">
+        <p>I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.</p>
+        <p>Currently, I'm a Senior Front-End Engineer at <strong>Klaviyo</strong>, specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo’s frontend, ensuring our platform meets web accessibility standards and best practices to deliver an inclusive user experience.</p>
+        <p>In the past, I've had the opportunity to develop software across a variety of settings — from <strong>advertising agencies</strong> and <strong>large corporations</strong> to <strong>start-ups</strong> and <strong>small digital product studios</strong>. Additionally, I also released a <strong>comprehensive video course</strong> a few years ago, guiding learners through building a web app with the Spotify API.</p>
+        <p>In my spare time, I’m usually climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for <strong>Korok seeds</strong>.</p>
+      </section>
+      <section id="experience" aria-label="Experience">
+        <article class="experience-entry">
+          <div class="dates" aria-hidden="true">2024 — Present</div>
+          <div class="details">
+            <h3>
+              Senior Frontend Engineer, Accessibility · 
+              <a href="#" target="_blank" rel="noopener noreferrer">Klaviyo</a>
+            </h3>
+            <p>Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.</p>
+            <div class="tags" aria-label="Skills">
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Storybook</span>
+            </div>
+          </div>
+        </article>
+        <article class="experience-entry">
+          <div class="dates" aria-hidden="true">2018 — 2024</div>
+          <div class="details">
+            <h3>
+              Lead Engineer · 
+              <a href="#" target="_blank" rel="noopener noreferrer">Upstatement</a>
+            </h3>
+            <p>Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.</p>
+            <div class="tags" aria-label="Skills">
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">HTML &amp; SCSS</span>
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">React Native</span>
+              <span class="tag">WordPress</span>
+              <span class="tag">Contentful</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PHP</span>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="projects" aria-label="Projects">
+        <article class="project">
+          <img src="https://user-images.githubusercontent.com/1500684/168676975-7a7a3a0a-0a3a-4a3a-9a3a-7a7a3a0a0a3a.png" alt="Build a Spotify Connected App" />
+          <div class="project-details">
+            <h3>
+              <a href="#" target="_blank" rel="noopener noreferrer">Build a Spotify Connected App</a>
+            </h3>
+            <p>Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.</p>
+            <div class="project-meta">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              689
+            </div>
+            <div class="tags" aria-label="Skills">
+              <span class="tag">React</span>
+              <span class="tag">Express</span>
+              <span class="tag">Spotify API</span>
+              <span class="tag">Heroku</span>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <img src="https://user-images.githubusercontent.com/1500684/168676976-7a7a3a0a-0a3a-4a3a-9a3a-7a7a3a0a0a3a.png" alt="Spotify Profile" />
+          <div class="project-details">
+            <h3>
+              <a href="#" target="_blank" rel="noopener noreferrer">Spotify Profile</a>
+            </h3>
+            <p>Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
+            <div class="project-meta">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              689
+            </div>
+            <div class="tags" aria-label="Skills">
+              <span class="tag">React</span>
+              <span class="tag">Express</span>
+              <span class="tag">Spotify API</span>
+              <span class="tag">Heroku</span>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <img src="https://user-images.githubusercontent.com/1500684/168676977-7a7a3a0a-0a3a-4a3a-9a3a-7a7a3a0a0a3a.png" alt="Halcyon Theme" />
+          <div class="project-details">
+            <h3>
+              <a href="#" target="_blank" rel="noopener noreferrer">Halcyon Theme</a>
+            </h3>
+            <p>Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more.</p>
+            <div class="project-meta">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              100k+ Installs
+            </div>
+            <div class="tags" aria-label="Skills">
+              <span class="tag">React</span>
+              <span class="tag">Express</span>
+              <span class="tag">Spotify API</span>
+              <span class="tag">Heroku</span>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <img src="https://user-images.githubusercontent.com/1500684/168676978-7a7a3a0a-0a3a-4a3a-9a3a-7a7a3a0a0a3a.png" alt="brittanychiang.com (v4)" />
+          <div class="project-details">
+            <h3>
+              <a href="#" target="_blank" rel="noopener noreferrer">brittanychiang.com (v4)</a>
+            </h3>
+            <p>An old portfolio site built with Gatsby with 6k+ stars on GitHub.</p>
+            <div class="project-meta">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              6k+ stars
+            </div>
+            <div class="tags" aria-label="Skills">
+              <span class="tag">React</span>
+              <span class="tag">Express</span>
+              <span class="tag">Spotify API</span>
+              <span class="tag">Heroku</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script>
+    // Navigation interaction
+    const navItems = document.querySelectorAll('nav li');
+    const sections = document.querySelectorAll('main section');
+
+    function setActiveSection(targetId) {
+      sections.forEach(section => {
+        section.classList.toggle('active', section.id === targetId);
+      });
+      navItems.forEach(item => {
+        const isActive = item.dataset.target === targetId;
+        item.classList.toggle('active', isActive);
+        item.setAttribute('aria-pressed', isActive);
+      });
+    }
+
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        setActiveSection(item.dataset.target);
+      });
+      item.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          setActiveSection(item.dataset.target);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
