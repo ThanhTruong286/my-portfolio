@@ -56,6 +56,9 @@ a:hover {
     color: #e0e7ff;
     /* lighter blue */
     margin-bottom: 0.25rem;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideFadeIn 0.8s ease forwards 0.2s;
 }
 
 .title {
@@ -64,6 +67,9 @@ a:hover {
     color: #f1f5f9;
     /* lighter slate */
     margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideFadeIn 0.8s ease forwards 0.4s;
 }
 
 .short-desc {
@@ -73,6 +79,9 @@ a:hover {
     /* slate-400 */
     max-width: 280px;
     line-height: 1.4;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideFadeIn 0.8s ease forwards 0.6s;
 }
 
 /* Navigation */
@@ -95,6 +104,11 @@ nav li {
     align-items: center;
     cursor: pointer;
     user-select: none;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideFadeInLeft 0.6s ease forwards;
+    animation-delay: calc(var(--i) * 0.1s);
+    transition: color 0.3s, transform 0.3s;
 }
 
 nav li.active {
@@ -155,10 +169,15 @@ nav li:not(.active)::before {
 
 section {
     display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 section.active {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .intro p {
@@ -166,6 +185,10 @@ section.active {
     font-size: 0.9rem;
     color: #cbd5e1;
     margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideFadeInUp 0.8s ease forwards;
+    animation-delay: 0.5s;
 }
 
 .intro p strong {
@@ -177,6 +200,14 @@ section.active {
     gap: 2rem;
     max-width: 600px;
     margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.experience-entry.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .experience-entry .dates {
@@ -238,6 +269,22 @@ section.active {
     max-width: 600px;
     margin-bottom: 1.5rem;
     align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 0.25rem;
+}
+
+.project.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project:hover {
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.4);
+    transform: translateY(-5px) scale(1.02);
 }
 
 .project img {
@@ -287,6 +334,40 @@ section.active {
     width: 14px;
     height: 14px;
     fill: currentColor;
+}
+
+/* Animations */
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive */

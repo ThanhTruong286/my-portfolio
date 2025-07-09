@@ -173,7 +173,19 @@
 
     function setActiveSection(targetId) {
       sections.forEach(section => {
-        section.classList.toggle('active', section.id === targetId);
+        const isActive = section.id === targetId;
+        section.classList.toggle('active', isActive);
+
+        // Add or remove 'visible' class for animation on experience entries and projects
+        const experienceEntries = section.querySelectorAll('.experience-entry');
+        const projects = section.querySelectorAll('.project');
+        if (isActive) {
+          experienceEntries.forEach(entry => entry.classList.add('visible'));
+          projects.forEach(project => project.classList.add('visible'));
+        } else {
+          experienceEntries.forEach(entry => entry.classList.remove('visible'));
+          projects.forEach(project => project.classList.remove('visible'));
+        }
       });
       navItems.forEach(item => {
         const isActive = item.dataset.target === targetId;
@@ -192,6 +204,15 @@
           setActiveSection(item.dataset.target);
         }
       });
+    });
+
+    // Initialize visible class on page load for the active section
+    document.addEventListener('DOMContentLoaded', () => {
+      const activeSection = document.querySelector('main section.active');
+      if (activeSection) {
+        activeSection.querySelectorAll('.experience-entry').forEach(entry => entry.classList.add('visible'));
+        activeSection.querySelectorAll('.project').forEach(project => project.classList.add('visible'));
+      }
     });
   </script>
 </body>
