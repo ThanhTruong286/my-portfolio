@@ -516,6 +516,123 @@ main {
   color: #64ffda;
 }
 
+.other-noteworthy-projects {
+  margin-top: 80px;
+  width: 100%;
+  text-align: center;
+  color: #a8b2d1;
+}
+
+.other-noteworthy-projects h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #ccd6f6;
+  margin-bottom: 8px;
+}
+
+.archive-link {
+  display: inline-block;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #64ffda;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+
+.archive-link:hover {
+  text-decoration: underline;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px 30px;
+  justify-items: start;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background-color: #112240;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 220px;
+}
+
+.folder-icon {
+  font-size: 28px;
+  color: #64ffda;
+  margin-bottom: 8px;
+}
+
+.project-card h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ccd6f6;
+  margin-bottom: 6px;
+}
+
+.project-card p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #a8b2d1;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: 'Fira Code', monospace;
+  font-size: 12px;
+  color: #64ffda;
+}
+
+.project-tags span {
+  background-color: #0a192f;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.project-links {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.project-links a {
+  color: #a8b2d1;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #64ffda;
+}
+
+.show-more-btn {
+  border: 1px solid #64ffda;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #64ffda;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #64ffda;
+  color: #0a192f;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   header {

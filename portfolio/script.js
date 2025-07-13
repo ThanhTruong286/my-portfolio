@@ -19,4 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Show More button functionality for Other Noteworthy Projects
+  const showMoreBtn = document.querySelector('.show-more-btn');
+  if (showMoreBtn) {
+    showMoreBtn.addEventListener('click', () => {
+      alert('Show More button clicked. Implement loading more projects here.');
+      // Placeholder: Implement loading or toggling more projects
+    });
+  }
 });
