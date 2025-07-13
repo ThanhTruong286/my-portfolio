@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
 }
 
 body {
@@ -973,21 +974,21 @@ main {
 }
 
 .about-me {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
 }
 
 .where-ive-worked {
-  animation-delay: 0.9s;
+  animation-delay: 0.3s;
 }
 
 .some-things-ive-built {
-  animation-delay: 1.2s;
+  animation-delay: 0.3s;
 }
 
 .contact-section {
-  animation-delay: 1.5s;
+  animation-delay: 0.3s;
 }
 
 .footer {
-  animation-delay: 1.8s;
+  animation-delay: 0.3s;
 }
