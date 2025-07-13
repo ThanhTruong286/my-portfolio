@@ -99,7 +99,7 @@ nav ul li a:hover {
 }
 
 /* Social Icons Left */
-.social-icons {
+.social-icons, .left-icon-section {
   position: fixed;
   left: 40px;
   bottom: 40px;
@@ -110,13 +110,13 @@ nav ul li a:hover {
   z-index: 10;
 }
 
-.social-icons a {
+.social-icons a, .left-icon-section a {
   color: #a8b2d1;
   font-size: 20px;
   transition: color 0.3s ease;
 }
 
-.social-icons a:hover {
+.social-icons a:hover, .left-icon-section a:hover {
   color: #64ffda;
 }
 
