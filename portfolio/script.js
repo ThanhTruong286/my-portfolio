@@ -1,31 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelectorAll('.work-nav ul li');
-  const jobDetails = document.querySelectorAll('.job-detail');
+  // ===== ABOUT SECTION =====
+  const aboutTabs = document.querySelectorAll('.about-nav li');
+  const aboutDetails = document.querySelectorAll('.about-details .about-detail');
 
-  tabs.forEach(tab => {
+  aboutTabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      // Remove active class from all tabs
-      tabs.forEach(t => t.classList.remove('active'));
-      // Hide all job details
-      jobDetails.forEach(detail => detail.style.display = 'none');
-
-      // Add active class to clicked tab
+      aboutTabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
-      // Show corresponding job detail
-      const jobId = tab.getAttribute('data-job');
-      const jobDetail = document.getElementById(jobId);
-      if (jobDetail) {
-        jobDetail.style.display = 'block';
-      }
+
+      const id = tab.getAttribute('data-job');
+      aboutDetails.forEach(detail => detail.classList.remove('active'));
+
+      const target = document.getElementById(id);
+      if (target) target.classList.add('active');
     });
   });
 
-  // Show More button functionality for Other Noteworthy Projects
-  const showMoreBtn = document.querySelector('.show-more-btn');
-  if (showMoreBtn) {
-    showMoreBtn.addEventListener('click', () => {
-      alert('Show More button clicked. Implement loading more projects here.');
-      // Placeholder: Implement loading or toggling more projects
+  // ===== WORK SECTION =====
+  const workTabs = document.querySelectorAll('.work-nav li');
+  const workDetails = document.querySelectorAll('.work-details .job-detail');
+
+  workTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      workTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const id = tab.getAttribute('data-job');
+      workDetails.forEach(detail => detail.style.display = 'none');
+
+      const target = document.getElementById(id);
+      if (target) target.style.display = 'block';
     });
-  }
+  });
 });

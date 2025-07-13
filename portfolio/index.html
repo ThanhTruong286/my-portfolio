@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Brittany Chiang Portfolio</title>
+  <title>Cao Thanh Truong Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700;900&display=swap"
     rel="stylesheet" />
@@ -20,9 +20,9 @@
       <div class="logo">HOPI</div>
       <nav>
         <ul>
-          <li><a href="#about"><span>01.</span> About</a></li>
-          <li><a href="#experience"><span>02.</span> Experience</a></li>
-          <li><a href="#work"><span>03.</span> Work</a></li>
+          <li><a href="#about"><span>01.</span> About Me</a></li>
+          <li><a href="#work"><span>02.</span> Where I’ve Worked</a></li>
+          <li><a href="#project"><span>03.</span> Some Things I’ve Built</a></li>
           <li><a href="#contact"><span>04.</span> Contact</a></li>
         </ul>
       </nav>
@@ -31,20 +31,26 @@
 
     <!-- Left Side Icon Section -->
     <aside class="left-icon-section">
-      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+      <a href="https://github.com/ThanhTruong286" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+          class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/hopihateyou" target="_blank" rel="noopener noreferrer"
+        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/hopiloveyou" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+          class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/cao-t-a06304308" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       <div class="vertical-line"></div>
     </aside>
 
     <aside class="social-icons">
-      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+      <a href="https://github.com/ThanhTruong286" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+          class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/hopihateyou" target="_blank" rel="noopener noreferrer"
+        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/hopiloveyou" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+          class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/cao-t-a06304308" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       <div class="vertical-line"></div>
     </aside>
 
@@ -56,98 +62,168 @@
     <main>
       <section class="intro">
         <p class="intro-small">Hi, my name is</p>
-        <h1 class="intro-name">Cao Thanh Truong.</h1>
-        <h2 class="intro-subtitle">I build things for the web.</h2>
+        <h1 class="intro-name">Cao Thanh Trường.</h1>
+        <h2 class="intro-subtitle">I develop websites and applications.</h2>
         <p class="intro-description">
-          I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
-          Currently, I’m focused on building accessible, human-centered products at <a href="#">Upstatement</a>.
+          I’m passionate about web development and technology. With strong foundations in HTML, CSS, JavaScript, and
+          PHP,
+          I'm eager to contribute to projects that make a real impact. I strive to build accessible, efficient, and
+          user-friendly websites.
         </p>
-        <!-- <a href="#" class="btn-course">Check out my course!</a> -->
       </section>
 
-      <section class="about-me">
+
+      <section class="about-me" id="about">
         <h2><span>01.</span> About Me</h2>
         <div class="about-me-content">
-          <div class="about-me-text">
-            <p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web
-              development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking
-              together a custom reblog button taught me a lot about HTML &amp; CSS!</p>
-            <p>Fast-forward to today, and I’ve had the privilege of working at <a href="#">an advertising agency</a>, <a
-                href="#">a start-up</a>, <a href="#">a huge corporation</a>, and <a href="#">a student-led design
-                studio</a>. My main focus these days is building accessible, inclusive products and digital experiences
-              at <a href="#">Upstatement</a> for a variety of clients.</p>
-            <p>I also recently <a href="#">launched a course</a> that covers everything you need to build a web app with
-              the Spotify API using Node &amp; React.</p>
-            <p>Here are a few technologies I’ve been working with recently:</p>
-            <ul class="tech-list">
-              <li>JavaScript (ES6+)</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>TypeScript</li>
-              <li>Eleventy</li>
-              <li>WordPress</li>
+          <nav class="about-nav">
+            <ul>
+              <li data-job="education" class="active">Education</li>
+              <li data-job="timeframe">Timeframe</li>
+              <li data-job="skills">Skills</li>
             </ul>
+          </nav>
+          <div class="about-details">
+            <div class="about-detail active" id="education">
+              <p style="margin: 0; font-weight: bold;">TDC - Faculty of Information Technology</p>
+              <p style="margin: 0 0 10px 0; font-size: 14px;">Sep 2022 – Jul 2025</p>
+              <p style="margin: 0; line-height: 1.6;">
+                <strong style="color: #64ffda;">Subject:</strong> Information Technology (Website Development)<br>
+                Studied comprehensive website development, covering front-end technologies (HTML, CSS, JavaScript) and
+                back-end languages (PHP, C#).<br>
+                Gained practical skills in responsive design, user experience (UX), and search engine optimization
+                (SEO).
+              </p>
+            </div>
+            <div class="about-detail" id="timeframe">
+              <p><strong style="color: #64ffda;">Short-term:</strong> Apply my programming knowledge and continue
+                learning
+                new technologies to contribute to real-world software development.</p>
+              <p><strong style="color: #64ffda;">Long-term:</strong> Become a senior web developer, capable of leading
+                technical projects and mentoring junior developers.</p>
+            </div>
+            <div class="about-detail" id="skills">
+              <p>Studied website programming with a focus on front-end (HTML, CSS, JavaScript) and back-end (PHP, C#,
+                SQL Server). Proficient in developing responsive layouts, working with WordPress, and using frameworks
+                like
+                Laravel.</p>
+              <p>Here are a few technologies I’ve been working with recently:</p>
+              <ul class="tech-list">
+                <li>HTML, CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>C#</li>
+                <li>Laravel</li>
+                <li>WordPress</li>
+                <li>SQL Server</li>
+              </ul>
+            </div>
           </div>
-          <!-- <div class="about-me-image">
-            <img src="https://user-images.githubusercontent.com/123456789/portrait.jpg" alt="Brittany Chiang" />
-          </div> -->
         </div>
       </section>
 
-      <section class="where-ive-worked">
+      <section class="where-ive-worked" id="work">
         <h2><span>02.</span> Where I’ve Worked</h2>
         <div class="work-content">
           <nav class="work-nav">
             <ul>
-              <li class="active" data-job="upstatement">Upstatement</li>
-              <li data-job="apple">Apple</li>
-              <li data-job="scout">Scout Studio</li>
-              <li data-job="starry">Starry</li>
-              <li data-job="mullenlowe">MullenLowe</li>
+              <li class="active" data-job="namkienvan">Nam Kiến Văn Education</li>
+              <li data-job="ecos">Công Ty TNHH - DV ECOS</li>
+              <li data-job="scout">BHK TECH JSC</li>
+              <li data-job="starry">Lu Coffee</li>
             </ul>
           </nav>
           <div class="work-details">
-            <div class="job-detail" id="upstatement">
-              <h3>Lead Engineer <span>@ Upstatement</span></h3>
-              <p class="work-date">May 2018 – Present</p>
+            <div class="job-detail" id="namkienvan">
+              <h3>Web Developer <span>@ Nam Kien Van</span></h3>
+              <p class="work-date">June 2025 – Present</p>
               <ul class="work-list">
-                <li>Deliver high-quality, robust production code for a diverse array of projects for clients including
-                  Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt
-                  University, The 19th News, and more</li>
-                <li>Work alongside creative directors to lead the research, development, and architecture of technical
-                  solutions to fulfill business requirements</li>
-                <li>Collaborate with designers, project managers, and other engineers to transform creative concepts
-                  into production realities for clients and stakeholders</li>
-                <li>Provide leadership within engineering department through close collaboration, knowledge shares, and
-                  mentorship</li>
+                <strong>School Website</strong>
+                <hr />
+                <br />
+                <li> Communicated with clients to understand their requirements and exchanged feedback effectively.</li>
+                <li>Designed user interfaces using Figma, ensuring user-friendly and consistent layouts.
+                </li>
+                <li>Developed the front-end using ReactJS and built the back-end with NodeJS and ExpressJS.
+                </li>
+                <li>Created internal SRS documentation to outline project features and specifications.</li>
+                <li>Managed domains and hosting through Vinahost services.
+                </li>
+                <li>Key implemented features: teacher list management, class scheduling, and course management.
+                </li>
+                <a href="https://namkienvan.edu.vn/" target="_blank" rel="noopener noreferrer">My result</a>
               </ul>
             </div>
-            <div class="job-detail" id="apple" style="display:none;">
-              <h3>Software Engineer <span>@ Apple</span></h3>
-              <p class="work-date">Jan 2016 – Apr 2018</p>
+            <div class="job-detail" id="ecos" style="display:none;">
+              <h3>ReactJS Intern <span>@ ECOS</span></h3>
+              <p class="work-date">Nov 2024 – Jan 2025</p>
               <ul class="work-list">
-                <li>Developed innovative features for iOS applications used by millions of users worldwide</li>
-                <li>Collaborated with cross-functional teams to design and implement new user experiences</li>
-                <li>Optimized app performance and fixed critical bugs</li>
+                <strong>ReactJS Project Internship (Social Media Website)</strong>
+                <hr />
+                <br />
+                <li>Conducted business analysis to understand project goals and user needs.
+                </li>
+                <li>Designed the UI using Figma, focusing on clarity and visual appeal.
+                </li>
+                <li>Drafted and documented the Software Requirements Specification (SRS) based on research insights.
+                </li>
+                <li>Developed the front-end using ReactJS, enhancing responsiveness and user experience.
+
+                </li>
+                <li>Built the back-end using NodeJS and ExpressJS, implementing RESTful APIs for seamless integration.
+
+                </li>
+                <li>Performed unit testing using Jest to ensure reliability and stability across features.
+
+                </li>
+                <li>Integrated front-end and back-end components for smooth functionality and performance.
+                </li>
               </ul>
             </div>
             <div class="job-detail" id="scout" style="display:none;">
-              <h3>Frontend Developer <span>@ Scout Studio</span></h3>
-              <p class="work-date">Jun 2014 – Dec 2015</p>
+              <h3>Power App Intern <span>@ BHK</span></h3>
+              <p class="work-date">Jun 2024 – Sep 2024</p>
               <ul class="work-list">
-                <li>Built responsive web interfaces for client projects</li>
-                <li>Worked closely with designers to translate mockups into functional code</li>
-                <li>Maintained and improved existing codebases</li>
+                <strong>Shift Management Application</strong>
+                <hr />
+                <br />
+                <li> Designed the UI using Figma, focusing on intuitive and user-friendly layouts.
+                </li>
+                <li>Drafted the SRS based on project requirements.
+                </li>
+                <li>Created an Entity-Relationship Diagram (ERD) to visualize and structure project data.</li>
+                <li>Developed features in Power Apps using UI prototypes from Figma.
+                </li>
+                <li>Built core functionalities like employee shift tracking, rescheduling, and admin controls.
+                </li>
+                <strong>Payment Advance Application</strong>
+                <hr />
+                <br />
+                <li> Researched and analyzed real business needs related to salary advances by consulting with the
+                  accounting department.
+                </li>
+                <li>Drafted and documented the SRS based on insights from the research.
+                </li>
+                <li>Designed the database schema and built an ERD to define data relationships.
+                </li>
+                <li>Created the UI using Figma and implemented the system using Power Apps
+                </li>
+                <li>Developed modules for request submission, approval, processing, and reporting of advance payments.
+                </li>
+                <li>Designed a flexible approval system based on organizational hierarchy.
+                </li>
               </ul>
             </div>
             <div class="job-detail" id="starry" style="display:none;">
-              <h3>Junior Developer <span>@ Starry</span></h3>
-              <p class="work-date">Jan 2013 – May 2014</p>
+              <h3>Bartending <span>@ Lu Coffee</span></h3>
+              <p class="work-date">Dec 2023 – Jan 2024</p>
               <ul class="work-list">
-                <li>Assisted in developing web applications and internal tools</li>
-                <li>Participated in code reviews and team meetings</li>
-                <li>Contributed to documentation and testing</li>
+                <li>Prepared beverages according to the menu and customer requests</li>
+                <li>Maintained cleanliness and organization of the bar area</li>
+                <li>Provided drink recommendations and professional customer service</li>
+                <li>Assisted in developing new drink recipes and improving service workflow</li>
               </ul>
+
             </div>
             <div class="job-detail" id="mullenlowe" style="display:none;">
               <h3>Intern <span>@ MullenLowe</span></h3>
@@ -162,52 +238,55 @@
         </div>
       </section>
 
-      <section class="some-things-ive-built">
+      <section class="some-things-ive-built" id="project">
         <h2><span>03.</span> Some Things I’ve Built</h2>
         <div class="projects">
           <div class="project featured-project">
-            <img src="https://user-images.githubusercontent.com/123456789/halcyon.png" alt="Halcyon Theme" />
+            <img src="./assets/images/namkienvan.png" alt="Lugx" />
             <div class="project-info">
               <p class="featured-label">Featured Project</p>
-              <h3>Halcyon Theme</h3>
+              <h3>Nam Kien Van Education Website</h3>
               <p class="project-description">
-                A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on <a
-                  href="#">Visual Studio Marketplace</a>, <a href="#">Package Control</a>, <a href="#">Atom Package
-                  Manager</a>, and <a href="#">npm</a>.
+                A website for a system of after-school cultural teaching centers. A place for you to interact with
+                enthusiastic teachers
               </p>
               <div class="project-tech">
-                <span>VS Code</span>
-                <span>Sublime Text</span>
-                <span>Atom</span>
-                <span>iTerm2</span>
-                <span>Hyper</span>
+                <span><a href="https://templatemo.com/tm-589-lugx-gaming" target="_blank"
+                    rel="noopener noreferrer">ReactJS</a></span>
+                <span>Bootstrap 5</span>
+                <span>NodeJS</span>
+                <span>ExpressJS</span>
+                <span>MySQL</span>
               </div>
               <div class="project-links">
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                <!-- <a href="https://github.com/ThanhTruong286/game-selling-website?tab=readme-ov-file" target="_blank"
+                  aria-label="GitHub"><i class="fab fa-github"></i></a> -->
+                <a href="https://namkienvan.edu.vn" target="_blank" aria-label="External Link"><i
+                    class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
           </div>
           <div class="project featured-project">
-            <img src="https://user-images.githubusercontent.com/123456789/spotify-profile.png" alt="Spotify Profile" />
+            <img src="./assets/images/lugx.png" alt="Lugx" />
             <div class="project-info">
               <p class="featured-label">Featured Project</p>
-              <h3>Spotify Profile</h3>
+              <h3>Lugx - Game Selling Website</h3>
               <p class="project-description">
-                A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played
-                tracks, and detailed audio information about each track. Create and save new playlists of recommended
-                tracks based on your existing playlists and more.
+                A game selling website like Steam built with Laravel and Lugx template. This is the best place where we
+                can buy or sell games.
               </p>
               <div class="project-tech">
-                <span>React</span>
-                <span>Styled Components</span>
-                <span>Express</span>
-                <span>Spotify API</span>
-                <span>Heroku</span>
+                <span>VS Code</span>
+                <span><a href="https://templatemo.com/tm-589-lugx-gaming" target="_blank" rel="noopener noreferrer">Lugx
+                    Template</a></span>
+                <span>Bootstrap 5</span>
+                <span>Laravel</span>
+                <span>WAMP Server</span>
               </div>
               <div class="project-links">
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/ThanhTruong286/game-selling-website?tab=readme-ov-file" target="_blank"
+                  aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <!-- <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a> -->
               </div>
             </div>
           </div>
@@ -217,83 +296,106 @@
       <!-- Other Noteworthy Projects Section -->
       <section class="other-noteworthy-projects">
         <h2>Other Noteworthy Projects</h2>
-        <a href="#" class="archive-link">view the archive</a>
+        <a href="https://github.com/ThanhTruong286" class="archive-link">view the archive</a>
         <div class="projects-grid">
           <div class="project-card">
             <div class="folder-icon">&#128193;</div>
-            <h3>Integrating Algolia Search with WordPress Multisite</h3>
-            <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
+            <h3>Knife Hit Clone</h3>
+            <p>This is a Front-end course project at school, and my team decided to create a game using JavaScript on
+              the Cocos platform</p>
             <div class="project-tags">
-              <span>Algolia</span>
-              <span>WordPress</span>
-              <span>PHP</span>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="folder-icon">&#128193;</div>
-            <h3>Time to Have More Fun</h3>
-            <p>A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind
-              CSS</p>
-            <div class="project-tags">
-              <span>Next.js</span>
-              <span>Tailwind CSS</span>
-              <span>Firebase</span>
+              <span>JavaScript</span>
+              <span>Cocos</span>
+              <span>VS Code</span>
             </div>
             <div class="project-links">
-              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/ThanhTruong286/CloneKnifeHit" target="_blank" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+              <!-- <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a> -->
             </div>
           </div>
           <div class="project-card">
             <div class="folder-icon">&#128193;</div>
-            <h3>Building a Headless Mobile App CMS From Scratch</h3>
+            <h3>Social Network Interface</h3>
+            <p>Social Network Interface is a front-end project that simulates the user interface of a modern social
+              networking platform.</p>
+            <div class="project-tags">
+              <span>ReactJS</span>
+              <span>NodeJS</span>
+              <span>ExpressJS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ThanhTruong286/social-network" target="_blank" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+              <!-- <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="folder-icon">&#128193;</div>
+            <h3>iOS Money Management App</h3>
             <p>Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement
             </p>
             <div class="project-tags">
-              <span>Node</span>
-              <span>Express</span>
+              <span>Xcode</span>
+              <span>Swift</span>
               <span>Firebase</span>
-              <span>Vue</span>
             </div>
             <div class="project-links">
-              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/ThanhTruong286/MoneyManagement" target="_blank" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+              <!-- <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a> -->
             </div>
           </div>
           <div class="project-card">
             <div class="folder-icon">&#128193;</div>
-            <h3>OctoProfile</h3>
-            <p>A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages,
-              starred repositories, and sort through your top repos by number of stars, forks, and size.</p>
+            <h3>Android Food Management App</h3>
+            <p>Android Food Management App is a mobile application designed to help users efficiently track, organize,
+              and manage their food inventory.</p>
             <div class="project-tags">
-              <span>Next.js</span>
-              <span>Chart.js</span>
-              <span>GitHub API</span>
+              <span>Java</span>
+              <span>Android Studio</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ThanhTruong286/food-management-android" target="_blank" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+              <!-- <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a> -->
             </div>
           </div>
           <div class="project-card">
             <div class="folder-icon">&#128193;</div>
-            <h3>Google Keep Clone</h3>
-            <p>A simple Google Keep clone built with Vue and Firebase.</p>
+            <h3>Shop Management</h3>
+            <p>Shop Manager is a desktop application developed using Windows Forms (WinForms) that provides a simple yet
+              effective solution for managing small retail shops or store inventories.</p>
             <div class="project-tags">
-              <span>Vue</span>
-              <span>Firebase</span>
+              <span>C#</span>
+              <span>MySQL</span>
+              <span>VS Code</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ThanhTruong286/shop-manager-winform-project" target="_blank"
+                aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <!-- <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a> -->
             </div>
           </div>
           <div class="project-card">
             <div class="folder-icon">&#128193;</div>
-            <h3>Apple Music Embeddable Web Player Widget</h3>
-            <p>Embeddable web player widget for Apple Music that lets users log in and listen to full song playback in
-              the browser leveraging <a href="#">MusicKit.js</a>. Read more about this project on <a
-                href="#">9to5Mac</a>.</p>
+            <h3>Ocean - Music Website</h3>
+            <p>A music streaming website that allows users to explore and enjoy a wide variety of music. Ocean Music
+              provides a seamless experience for music listeners, artists, and administrator</p>
             <div class="project-tags">
-              <span>MusicKit.js</span>
-              <span>JS</span>
-              <span>SCSS</span>
+              <span>ReactJS</span>
+              <span>NodeJS</span>
+              <span>ExpressJS</span>
+              <span>Wamp Serv</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ThanhTruong286/ocean-music-website" target="_blank" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+              <!-- <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a> -->
             </div>
           </div>
         </div>
-        <button class="show-more-btn">Show More</button>
+        <!-- <button class="show-more-btn">Show More</button> -->
       </section>
 
     </main>
@@ -301,9 +403,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <h2><span>04.</span> Contact</h2>
-      <p>Feel free to reach out to me via email or social media. I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
-      <a href="mailto:brittany.chiang@gmail.com" class="contact-email">brittany.chiang@gmail.com</a>
+      <p>Feel free to reach out to me via email or social media. I’m always open to discussing new projects, creative
+        ideas, or opportunities to be part of your visions.</p>
+      <a href="mailto:brittany.chiang@gmail.com" class="contact-email">caot43069@gmail.com</a>
     </section>
   </div>
 </body>
+
 </html>

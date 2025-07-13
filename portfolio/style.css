@@ -53,10 +53,10 @@ header {
 .logo {
   position: absolute;
   left: 0;
-  top: 0px;
+  top: 20px;
   font-family: 'Fira Code', monospace;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 12px;
   color: #64ffda;
   border: 1px solid #64ffda;
   padding: 8px 12px;
@@ -737,4 +737,62 @@ main {
   .project img {
     width: 100%;
   }
+}
+
+.about-nav {
+  flex: 0 0 150px;
+  border-left: 2px solid #233554;
+  display: block;
+  padding-left: 0;
+  margin: 0;
+}
+.about-nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.about-nav ul li {
+  padding: 10px 20px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #8892b0;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  border-bottom: none;
+  transition: all 0.3s ease;
+}
+.about-nav ul li.active,
+.about-nav ul li:hover {
+  color: #64ffda;
+  border-left-color: #64ffda;
+  background-color: #112240;
+}
+
+.about-details {
+  flex: 1;
+  color: #a8b2d1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-details h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ccd6f6;
+  margin-bottom: 8px;
+}
+
+.about-details h3 span {
+  color: #64ffda;
+}
+
+.about-detail {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.about-detail.active {
+  display: block;
+  opacity: 1;
 }
