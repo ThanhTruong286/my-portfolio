@@ -32,6 +32,29 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target) target.style.display = 'block';
     });
   });
+
+  // ===== SCROLL ANIMATIONS =====
+  const animatedElements = document.querySelectorAll('.intro, .about-me, .where-ive-worked, .some-things-ive-built, .contact-section, .footer');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  animatedElements.forEach(el => {
+    el.style.animationPlayState = 'paused';
+    observer.observe(el);
+  });
 });
 
 // Ngăn trình duyệt khôi phục vị trí cuộn khi reload

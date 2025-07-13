@@ -819,11 +819,12 @@ main {
 .footer-social-icons a {
   color: #00FF00;
   font-size: 20px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-social-icons a:hover {
   color: #00cc00;
+  transform: scale(1.2);
 }
 
 /* Animations */
