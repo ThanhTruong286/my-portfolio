@@ -394,6 +394,128 @@ main {
   color: #64ffda;
 }
 
+/* Some Things I've Built Section */
+.some-things-ive-built {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.some-things-ive-built h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #ccd6f6;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #233554;
+  padding-bottom: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.project {
+  background-color: #112240;
+  border-radius: 4px;
+  overflow: hidden;
+  flex: 1 1 48%;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.featured-project {
+  background-color: #112240;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  flex: 1 1 100%;
+}
+
+.project img {
+  width: 50%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.project-info {
+  flex: 1;
+  color: #a8b2d1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featured-label {
+  color: #64ffda;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.project-info h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ccd6f6;
+  margin-bottom: 10px;
+}
+
+.project-info h3 a {
+  color: #64ffda;
+  text-decoration: none;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-description a {
+  color: #64ffda;
+  text-decoration: none;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #64ffda;
+  margin-bottom: 20px;
+}
+
+.project-tech span {
+  background-color: #0a192f;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-links a {
+  color: #a8b2d1;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #64ffda;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   header {
@@ -443,5 +565,15 @@ main {
   .work-nav ul li:hover {
     border-left-color: #64ffda;
     border-top-color: transparent;
+  }
+  .some-things-ive-built .projects {
+    flex-direction: column;
+  }
+  .project,
+  .featured-project {
+    flex: 1 1 100%;
+  }
+  .project img {
+    width: 100%;
   }
 }
