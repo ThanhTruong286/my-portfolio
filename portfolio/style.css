@@ -60,7 +60,7 @@ header {
   cursor: default;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   gap: 30px;
   list-style: none;
@@ -301,6 +301,99 @@ main {
   border-radius: 4px;
 }
 
+/* Where I've Worked Section */
+.where-ive-worked {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.where-ive-worked h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #ccd6f6;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #233554;
+  padding-bottom: 10px;
+}
+
+.work-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.work-nav {
+  flex: 0 0 150px;
+  border-left: 2px solid #233554;
+  display: block;
+  padding-left: 0;
+  margin: 0;
+}
+.work-nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.work-nav ul li {
+  padding: 10px 20px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #8892b0;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  border-bottom: none;
+  transition: all 0.3s ease;
+}
+.work-nav ul li.active,
+.work-nav ul li:hover {
+  color: #64ffda;
+  border-left-color: #64ffda;
+  background-color: #112240;
+}
+
+.work-details {
+  flex: 1;
+  color: #a8b2d1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.work-details h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ccd6f6;
+  margin-bottom: 8px;
+}
+
+.work-details h3 span {
+  color: #64ffda;
+}
+
+.work-date {
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #8892b0;
+  margin-bottom: 20px;
+}
+
+.work-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.work-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.work-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #64ffda;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   header {
@@ -328,5 +421,27 @@ main {
   .about-me-image {
     margin: 0 auto;
     width: 70%;
+  }
+  .work-content {
+    flex-direction: column;
+  }
+  .work-nav {
+    border-left: 2px solid #233554;
+    border-top: none;
+    flex: 0 0 150px;
+  }
+  .work-nav ul {
+    display: block;
+    gap: 0;
+  }
+  .work-nav ul li {
+    border-left: 3px solid transparent;
+    border-top: none;
+    padding: 10px 20px;
+  }
+  .work-nav ul li.active,
+  .work-nav ul li:hover {
+    border-left-color: #64ffda;
+    border-top-color: transparent;
   }
 }
