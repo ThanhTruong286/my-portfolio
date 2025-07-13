@@ -710,7 +710,7 @@ main {
     flex-direction: column;
   }
   .work-nav {
-    border-left: 2px solid #233554;
+    border-left: 2px solid #00FF00;
     border-top: none;
     flex: 0 0 150px;
   }
@@ -742,7 +742,7 @@ main {
 
 .about-nav {
   flex: 0 0 150px;
-  border-left: 2px solid #233554;
+  border-left: 2px solid #00FF00;
   display: block;
   padding-left: 0;
   margin: 0;
@@ -796,4 +796,74 @@ main {
 .about-detail.active {
   display: block;
   opacity: 1;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  background-color: #000000;
+}
+
+.footer-social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social-icons a {
+  color: #00FF00;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #00cc00;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro, .about-me, .where-ive-worked, .some-things-ive-built, .contact-section, .footer {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+.intro {
+  animation-delay: 0.3s;
+}
+
+.about-me {
+  animation-delay: 0.6s;
+}
+
+.where-ive-worked {
+  animation-delay: 0.9s;
+}
+
+.some-things-ive-built {
+  animation-delay: 1.2s;
+}
+
+.contact-section {
+  animation-delay: 1.5s;
+}
+
+.footer {
+  animation-delay: 1.8s;
 }

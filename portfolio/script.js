@@ -33,3 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Ngăn trình duyệt khôi phục vị trí cuộn khi reload
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+// Khi reload xong thì cuộn về đầu
+window.addEventListener('load', function () {
+  window.scrollTo(0, 0);
+});
