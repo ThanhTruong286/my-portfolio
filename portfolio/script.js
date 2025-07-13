@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      if(entry.isIntersecting) {
+      if (entry.isIntersecting) {
         entry.target.style.animationPlayState = 'running';
         observer.unobserve(entry.target);
       }
@@ -55,6 +55,18 @@ document.addEventListener('DOMContentLoaded', () => {
     el.style.animationPlayState = 'paused';
     observer.observe(el);
   });
+
+  // ===== BURGER MENU TOGGLE =====
+  const burgerMenu = document.querySelector('.burger-menu');
+  const navMenu = document.querySelector('nav.nav-menu');
+
+  if (burgerMenu && navMenu) {
+    burgerMenu.addEventListener('click', () => {
+      const expanded = burgerMenu.getAttribute('aria-expanded') === 'true' || false;
+      burgerMenu.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('open');
+    });
+  }
 });
 
 // Ngăn trình duyệt khôi phục vị trí cuộn khi reload
@@ -66,3 +78,8 @@ if ('scrollRestoration' in history) {
 window.addEventListener('load', function () {
   window.scrollTo(0, 0);
 });
+
+function toggleMenu() {
+  const nav = document.querySelector('.nav-menu');
+  nav.classList.toggle('active');
+}

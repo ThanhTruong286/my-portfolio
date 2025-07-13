@@ -18,15 +18,21 @@
   <div class="container">
     <header>
       <div class="logo">HOPI</div>
-      <nav>
+      <button class="burger-menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+      <nav id="primary-navigation" class="nav-menu">
         <ul>
           <li><a href="#about"><span>01.</span> About Me</a></li>
           <li><a href="#work"><span>02.</span> Where I’ve Worked</a></li>
           <li><a href="#project"><span>03.</span> Some Things I’ve Built</a></li>
           <li><a href="#contact"><span>04.</span> Contact</a></li>
         </ul>
+        <a href="./assets/resume.pdf" class="resume-btn resume-btn-mobile" target="_blank" rel="noopener noreferrer">Resume</a>
       </nav>
-      <a href="./assets/resume.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="./assets/resume.pdf" class="resume-btn resume-btn-desktop" target="_blank" rel="noopener noreferrer">Resume</a>
     </header>
 
     <!-- Left Side Icon Section -->
